@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  
+  proxy:
+    build: .
+    container_name: proxy
+    ports:
+      - "80:80"
+    restart: always
+
+networks:
+  rvcontabilidade:
